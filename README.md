@@ -1,2 +1,2 @@
-# SwiftEdutation
+# SwiftEducation
 Swift Education
