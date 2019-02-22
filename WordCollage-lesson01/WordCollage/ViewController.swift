@@ -9,9 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var labelLearnToCode: UILabel!
+    let relativeFontConst: CGFloat = 0.046
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        labelLearnToCode.font = labelLearnToCode.font.withSize(self.view.frame.height * relativeFontConst)
     }
 
     override func didReceiveMemoryWarning() {
