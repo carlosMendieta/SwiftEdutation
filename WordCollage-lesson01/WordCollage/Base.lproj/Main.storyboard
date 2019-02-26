@@ -142,31 +142,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYn-uI-EGL">
-                                <rect key="frame" x="181.66666666666666" y="661" width="51" height="30"/>
+                                <rect key="frame" x="181.66666666666663" y="661" width="51" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="custom"/>
                                 <connections>
-                                    <action selector="customColor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="psI-ZI-5Fk"/>
+                                    <action selector="touchButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vfd-IJ-lro"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zb0-NZ-4mY">
-                                <rect key="frame" x="68.666666666666671" y="661" width="37" height="30"/>
+                                <rect key="frame" x="68.666666666666686" y="661" width="37" height="30"/>
                                 <state key="normal" title="white"/>
                                 <connections>
-                                    <action selector="whiteButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="W5z-qf-uTR"/>
+                                    <action selector="touchButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i7t-hE-hIo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxD-zl-AKb">
                                 <rect key="frame" x="308.66666666666669" y="661" width="37" height="30"/>
                                 <state key="normal" title="black"/>
                                 <connections>
-                                    <action selector="blackButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E5X-kD-JSp"/>
+                                    <action selector="touchButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nO5-PH-ctr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VxD-zl-AKb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="120" id="0IQ-IS-N9L"/>
+                            <constraint firstItem="VxD-zl-AKb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="120" id="0IQ-IS-N9L">
+                                <variation key="heightClass=compact" constant="280"/>
+                            </constraint>
                             <constraint firstItem="uYn-uI-EGL" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0qR-iE-gbh">
                                 <variation key="heightClass=compact" constant="220"/>
                             </constraint>
@@ -179,7 +181,9 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="-20"/>
                             </constraint>
                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Sjk-pL-fiN" secondAttribute="trailing" constant="214" id="3uo-jd-1kx"/>
-                            <constraint firstItem="zb0-NZ-4mY" firstAttribute="top" secondItem="Dnm-an-hZg" secondAttribute="bottom" constant="23" id="48K-gg-hVk"/>
+                            <constraint firstItem="zb0-NZ-4mY" firstAttribute="top" secondItem="Dnm-an-hZg" secondAttribute="bottom" constant="23" id="48K-gg-hVk">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" relation="lessThanOrEqual" secondItem="Dnm-an-hZg" secondAttribute="bottom" constant="98" id="5JG-FU-gBf"/>
                             <constraint firstItem="WPU-gB-7PY" firstAttribute="top" relation="lessThanOrEqual" secondItem="mNd-ho-BKt" secondAttribute="bottom" constant="10" id="5Su-eE-Phj"/>
                             <constraint firstItem="bAj-13-3Qq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="5pz-YB-YLW"/>
@@ -192,7 +196,9 @@
                             <constraint firstItem="tVB-tP-eb2" firstAttribute="leading" relation="lessThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="155" id="7TY-S8-8FX">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
-                            <constraint firstItem="zb0-NZ-4mY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-120" id="8OQ-6z-kYD"/>
+                            <constraint firstItem="zb0-NZ-4mY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-120" id="8OQ-6z-kYD">
+                                <variation key="heightClass=compact" constant="160"/>
+                            </constraint>
                             <constraint firstItem="4Np-u3-8pG" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8Xy-Gb-WhA">
                                 <variation key="heightClass=compact-widthClass=compact" constant="-80"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="-150"/>
@@ -200,7 +206,9 @@
                             <constraint firstItem="Sjk-pL-fiN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="25" id="8aJ-0i-B75">
                                 <variation key="heightClass=compact" constant="50"/>
                             </constraint>
-                            <constraint firstItem="VxD-zl-AKb" firstAttribute="top" secondItem="Dnm-an-hZg" secondAttribute="bottom" constant="23" id="9Uu-uy-FT7"/>
+                            <constraint firstItem="VxD-zl-AKb" firstAttribute="top" secondItem="Dnm-an-hZg" secondAttribute="bottom" constant="23" id="9Uu-uy-FT7">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="bAj-13-3Qq" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="AAy-jV-iUK"/>
                             <constraint firstItem="6tR-Hu-BVu" firstAttribute="top" secondItem="1h6-Vp-V8x" secondAttribute="bottom" constant="-30" id="AJP-3s-1L2">
                                 <variation key="heightClass=compact" constant="-60"/>
@@ -329,8 +337,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="labelCustomColor" destination="K60-1F-eGz" id="d8Q-UG-0Gl"/>
-                        <outlet property="labelLearnToCode" destination="Dnm-an-hZg" id="Rb5-f0-ool"/>
+                        <outletCollection property="buttons" destination="zb0-NZ-4mY" collectionClass="NSMutableArray" id="CvZ-GY-lvF"/>
+                        <outletCollection property="buttons" destination="uYn-uI-EGL" collectionClass="NSMutableArray" id="hw3-EA-Fge"/>
+                        <outletCollection property="buttons" destination="VxD-zl-AKb" collectionClass="NSMutableArray" id="hHM-Qm-STD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

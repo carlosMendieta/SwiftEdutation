@@ -8,32 +8,32 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var labelCustomColor: UILabel!
-    private let customColor = UIColor(red: 0.2, green: 0.3, blue: 0.1, alpha: 0.5)
-    @IBAction func whiteButton(_ sender: UIButton) {
-        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    @IBOutlet var buttons: [UIButton]!
+    @IBAction func touchButton(_ sender: UIButton) {
+        if let buttonNumber = buttons.index(of: sender) {
+            view.backgroundColor = setBackgroundColor(optionColor: buttonNumber)
+            let button = buttons[buttonNumber]
+            button.backgroundColor = setBackgroundColor(optionColor: buttonNumber)
+        }else {
+            
+        }
     }
-    @IBAction func blackButton(_ sender: UIButton) {
-        view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-    }
-    @IBAction func customColor(_ sender: UIButton) {
-        view.backgroundColor = customColor
-    }
-    @IBOutlet weak var labelLearnToCode: UILabel!
-    let relativeFontConst: CGFloat = 0.046
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        labelLearnToCode.font = labelLearnToCode.font.withSize(self.view.frame.height * relativeFontConst)
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func setBackgroundColor(optionColor: Int) -> UIColor {
+        switch optionColor {
+        case 0:
+            return #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        case 1:
+            return UIColor(red: 0.7, green: 0.3, blue: 0.1, alpha: 0.5)
+        case 2:
+            return #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        default:
+            return #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        }
+    }
 }
 
 
