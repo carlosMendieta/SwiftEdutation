@@ -9,7 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    @IBOutlet weak var labelCustomColor: UILabel!
+    private var blackWhite = true
+    private let customColor = UIColor(red: 0.2, green: 0.3, blue: 0.1, alpha: 0.5)
+    @IBAction func changeBackground(_ sender: UIButton) {
+        blackWhite.toggle()
+        if blackWhite { view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) }
+        else { view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)}
+        labelCustomColor.textColor = customColor
+    }
     @IBOutlet weak var labelLearnToCode: UILabel!
     let relativeFontConst: CGFloat = 0.046
     
@@ -23,7 +31,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
+
 
