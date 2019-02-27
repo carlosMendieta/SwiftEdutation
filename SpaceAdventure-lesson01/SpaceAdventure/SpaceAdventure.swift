@@ -8,7 +8,8 @@
 
 import Foundation
 class SpaceAdventure {
-    let planetarySystem = PlanetarySystem(name: "Solar System")
+    let planets = ["mercurio","venus","tierra","marte","jupiter","saturno","urano","neptuno"]
+    let planetarySystem = PlanetarySystem(name: "Solar System", planets: [Planet]())
     func start(){
         displayIntroduction()
         greetAdventurer()
@@ -16,10 +17,9 @@ class SpaceAdventure {
         determineDestination()
     }
     private func displayIntroduction(){
-        let numberOfPlanets = 8
         let diameterOfEarth = 24859.82
         print("Welcome to the \(planetarySystem.name)!")
-        print("There are \(numberOfPlanets) planets to explore.")
+        print("There are \(planetarySystem.planets.count) planets to explore.")
         print("You are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
     }
     private func message(message: String) -> String {
@@ -31,7 +31,7 @@ class SpaceAdventure {
         print("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.")
     }
     private func determineDestination() {
-        let planets = ["mercurio","venus","tierra","marte","jupiter","saturno","urano","neptuno"]
+        
         var decision = ""
         while !(decision == "Y" || decision == "N") {
             decision = message(message: "Shall I randomly choose a planet for you to visit? (Y or N)")
@@ -46,5 +46,8 @@ class SpaceAdventure {
                 print("Sorry, I didn't get that.")
             }
         }
+    }
+    init() {
+        //TO DO 
     }
 }
