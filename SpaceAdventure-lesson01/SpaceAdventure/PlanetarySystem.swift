@@ -14,5 +14,6 @@ class PlanetarySystem {
     init(name: String, planets: [Planet]) {
         self.name = name
         self.planets = planets
+        numberOfPlanets = planets.count
     }
 }
