@@ -6,6 +6,9 @@
  */
 
 import Foundation
+
+let adventure = SpaceAdventure()
+
 //===============  Lesson 1 ===============
 let numberOfPlanets = 8
 let diameterOfEarth = 24859.82
