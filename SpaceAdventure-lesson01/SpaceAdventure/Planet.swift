@@ -8,5 +8,8 @@
 
 import Foundation
 class Planet{
-    
+    var name = ""
+    init(name: String) {
+        self.name = name
+    }
 }

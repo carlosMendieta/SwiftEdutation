@@ -6,8 +6,10 @@
  */
 
 import Foundation
-
-let adventure = SpaceAdventure()
+let mercurio = Planet(name: "mercurio"), venus = Planet(name: "venus"), tierra = Planet(name: "tierra")
+let planets = [mercurio,venus,tierra]
+let planetarySystem = PlanetarySystem(name: "Solar System", planets: planets)
+let adventure = SpaceAdventure(planetarySystem: planetarySystem)
 adventure.start()
 
 

@@ -9,7 +9,7 @@
 import Foundation
 class SpaceAdventure {
     let planets = ["mercurio","venus","tierra","marte","jupiter","saturno","urano","neptuno"]
-    let planetarySystem: PlanetarySystem
+    let planetarySystem: PlanetarySystem?
     func start(){
         displayIntroduction()
         greetAdventurer()
@@ -18,8 +18,12 @@ class SpaceAdventure {
     }
     private func displayIntroduction(){
         let diameterOfEarth = 24859.82
-        print("Welcome to the \(planetarySystem.name)!")
-        print("There are \(planetarySystem.planets.count) planets to explore.")
+        if let name = planetarySystem?.name {
+            print("Welcome to the \(name)!")
+        }else { print("Welcome to our planetary system")}
+        if let planetCount = planetarySystem?.planets {
+            print("There are \(planetCount) planets to explore.")
+        } else { print("that system doesn't have planets")}
         print("You are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
     }
     private func message(message: String) -> String {

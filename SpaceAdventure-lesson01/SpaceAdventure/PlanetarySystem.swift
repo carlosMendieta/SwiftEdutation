@@ -8,9 +8,9 @@
 
 import Foundation
 class PlanetarySystem {
-    var name = ""
-    var numberOfPlanets = 0
-    let planets: [Planet]
+    var name: String?
+    var numberOfPlanets: Int?
+    let planets: [Planet]?
     init(name: String, planets: [Planet]) {
         self.name = name
         self.planets = planets
