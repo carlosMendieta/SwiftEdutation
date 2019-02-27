@@ -23,12 +23,19 @@ func message(message: String) -> String {
 }
 let name = message(message: "What is your name?")
 print("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.")
-let decision = message(message: "Let's go on an adventure! \nShall I randomly choose a planet for you to visit? (Y or N)")
+var decision = message(message: "Let's go on an adventure! \nShall I randomly choose a planet for you to visit? (Y or N)")
 let planets = ["mercurio","venus","tierra","marte","jupiter","saturno","urano","neptuno"]
-if decision == "Y" || decision == "y"{
-    print("Ok! Traveling to \(planets.randomElement()!)")
-} else if decision == "N" || decision == "n"{
-    let planet = message(message: "Ok, name the planet you would like to visit...")
-    print("ok, so we are going to \(planet)")
-} else { print("wrong choise, now we can't travel.")}
+while !(decision == "Y" || decision == "N") {
+    decision = getln()
+    if decision == "Y" {
+        print("Ok! Traveling to \(planets.randomElement()!)")
+    } else if decision == "N" {
+        let planet = message(message: "Ok, name the planet you would like to visit...")
+        print("ok, so we are going to \(planet)")
+    } else if decision == "Cookies!"{
+        print("Oh great! I really like cookies!")
+    } else {
+        print("Sorry, I didn't get that.")
+    }
+}
 
