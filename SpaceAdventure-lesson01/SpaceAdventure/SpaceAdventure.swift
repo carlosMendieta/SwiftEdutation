@@ -8,8 +8,7 @@
 
 import Foundation
 class SpaceAdventure {
-    let planets = ["mercurio","venus","tierra","marte","jupiter","saturno","urano","neptuno"]
-    let planetarySystem: PlanetarySystem?
+    let myPlanetarySystem = PlanetarySystem(name: "Solar System", planets: [Planet]())
     func start(){
         displayIntroduction()
         greetAdventurer()
@@ -18,12 +17,12 @@ class SpaceAdventure {
     }
     private func displayIntroduction(){
         let diameterOfEarth = 24859.82
-        if let name = planetarySystem?.name {
-            print("Welcome to the \(name)!")
-        }else { print("Welcome to our planetary system")}
-        if let planetCount = planetarySystem?.planets {
-            print("There are \(planetCount) planets to explore.")
-        } else { print("that system doesn't have planets")}
+        print("Welcome to the \(myPlanetarySystem.name)!")
+        if myPlanetarySystem.planets.count == 1 {
+            print("There are \(myPlanetarySystem.planets.count) planet to explore.")
+        } else {
+            print("There are \(myPlanetarySystem.planets.count) planets to explore.")
+        }
         print("You are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
     }
     private func message(message: String) -> String {
@@ -40,7 +39,7 @@ class SpaceAdventure {
         while !(decision == "Y" || decision == "N") {
             decision = message(message: "Shall I randomly choose a planet for you to visit? (Y or N)")
             if decision == "Y" {
-                print("Ok! Traveling to... \(planets.randomElement()!)")
+                print("Ok! Traveling to... \(myPlanetarySystem.planets.randomElement()?.name ?? "Ups, we don't have any planet to travel" )")
             } else if decision == "N" {
                 let planet = message(message: "Ok, name the planet you would like to visit...")
                 print("ok, so we are going to \(planet)")
@@ -51,7 +50,9 @@ class SpaceAdventure {
             }
         }
     }
-    init(planetarySystem: PlanetarySystem) {
-        self.planetarySystem = planetarySystem
+    init() {
+        myPlanetarySystem.planets.append(Planet(name: "mercurio", description:"first planet"))
+        myPlanetarySystem.planets.append(Planet(name: "venus", description:"shine like a star"))
+        myPlanetarySystem.planets.append(Planet(name: "tierra", description:"we live here"))
     }
 }

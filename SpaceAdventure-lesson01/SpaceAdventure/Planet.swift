@@ -8,8 +8,11 @@
 
 import Foundation
 class Planet{
-    var name = ""
-    init(name: String) {
+    let name: String
+    let description: String
+    var moonsCount = 0
+    init(name: String, description: String) {
         self.name = name
+        self.description = description
     }
 }

@@ -66,10 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				F9A13B8D1ADDD6990057A316 /* main.swift */,
-				F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */,
 				AC2B2FB92226E25700AFB448 /* SpaceAdventure.swift */,
 				AC2B2FBB2226F3ED00AFB448 /* PlanetarySystem.swift */,
 				DB0A94092227166500025070 /* Planet.swift */,
+				F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */,
 			);
 			path = SpaceAdventure;
 			sourceTree = "<group>";
