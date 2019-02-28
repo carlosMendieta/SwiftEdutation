@@ -51,8 +51,15 @@ class SpaceAdventure {
         }
     }
     init() {
-        myPlanetarySystem.planets.append(Planet(name: "mercurio", description:"first planet"))
-        myPlanetarySystem.planets.append(Planet(name: "venus", description:"shine like a star"))
-        myPlanetarySystem.planets.append(Planet(name: "tierra", description:"we live here"))
+        myPlanetarySystem.planets = [
+            Planet(name: "mercurio", description:"first planet"),
+            Planet(name: "venus", description:"shine like a star"),
+            Planet(name: "tierra", description:"we live here"),
+            Planet(name: "marte", description:"the red planet"),
+            Planet(name: "jupiter", description:"the big one"),
+            Planet(name: "saturno", description:"the one with rings"),
+            Planet(name: "urano", description:"the gas planet"),
+            Planet(name: "neptuno", description:"so far away"),
+        ]
     }
 }
