@@ -39,16 +39,30 @@ class SpaceAdventure {
         while !(decision == "Y" || decision == "N") {
             decision = message(message: "Shall I randomly choose a planet for you to visit? (Y or N)")
             if decision == "Y" {
-                print("Ok! Traveling to... \(myPlanetarySystem.planets.randomElement()?.name ?? "Ups, we don't have any planet to travel" )")
+                if myPlanetarySystem.planets.count == 0 {
+                    print("sorry, we don't have planets at this moment, try later.")
+                } else{
+                    visit(planetName: myPlanetarySystem.planets.randomElement()!.name)
+                }
             } else if decision == "N" {
                 let planet = message(message: "Ok, name the planet you would like to visit...")
-                print("ok, so we are going to \(planet)")
+                visit(planetName: planet)
             } else if decision == "Cookies!"{
                 print("oh great! I really like cookies!")
             } else {
                 print("Sorry, I didn't get that.")
             }
         }
+    }
+    private func visit(planetName: String){
+        var found = false
+        for planet in myPlanetarySystem.planets {
+            if planet.name == planetName {
+                print("Ok! Traveling to... \(planet.name). \(planet.description)")
+                found.toggle()
+            }
+        }
+        if !found {print("Sorry, we don't know that planet.")}
     }
     init() {
         myPlanetarySystem.planets = [
