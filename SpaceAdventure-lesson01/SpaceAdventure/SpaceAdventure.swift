@@ -8,7 +8,7 @@
 
 import Foundation
 class SpaceAdventure {
-    let myPlanetarySystem = PlanetarySystem(name: "Solar System", planets: [Planet]())
+    let myPlanetarySystem: PlanetarySystem
     func start(){
         displayIntroduction()
         greetAdventurer()
@@ -39,7 +39,7 @@ class SpaceAdventure {
         while !(decision == "Y" || decision == "N") {
             decision = message(message: "Shall I randomly choose a planet for you to visit? (Y or N)")
             if decision == "Y" {
-                if myPlanetarySystem.planets.count == 0 {
+                if myPlanetarySystem.planets.isEmpty {
                     print("sorry, we don't have planets at this moment, try later.")
                 } else{
                     visit(planetName: myPlanetarySystem.planets.randomElement()!.name)
@@ -64,16 +64,8 @@ class SpaceAdventure {
         }
         if !found {print("Sorry, we don't know that planet.")}
     }
-    init() {
-        myPlanetarySystem.planets = [
-            Planet(name: "mercurio", description:"first planet"),
-            Planet(name: "venus", description:"shine like a star"),
-            Planet(name: "tierra", description:"we live here"),
-            Planet(name: "marte", description:"the red planet"),
-            Planet(name: "jupiter", description:"the big one"),
-            Planet(name: "saturno", description:"the one with rings"),
-            Planet(name: "urano", description:"the gas planet"),
-            Planet(name: "neptuno", description:"so far away"),
-        ]
+    init(myPlanetarySystem: PlanetarySystem) {
+        self.myPlanetarySystem = myPlanetarySystem
     }
+    
 }
