@@ -34,7 +34,6 @@ class SpaceAdventure {
         print("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.")
     }
     private func determineDestination() {
-        
         var decision = ""
         while !(decision == "Y" || decision == "N") {
             decision = message(message: "Shall I randomly choose a planet for you to visit? (Y or N)")

@@ -4,25 +4,25 @@
 <dict>
 	<key>Description</key>
 	<array>
-		<string>first planet</string>
-		<string>shine like a star</string>
-		<string>we live here</string>
-		<string>the red planet</string>
-		<string>the big one</string>
-		<string>the one with rings</string>
-		<string>the gas planet</string>
-		<string>so far away</string>
+		<string>This planet has beautiful rings around it.</string>
+		<string>A gas giant, with a noticeable red spot.</string>
+		<string>A very hot planet, closest to the sun.</string>
+		<string>Known as the red planet.</string>
+		<string>There is something very familiar about this planet.</string>
+		<string>Strangely, this planet rotates around on its side.</string>
+		<string>A very cold planet, furthest from the sun.</string>
+		<string>It's very cloudy here!</string>
 	</array>
 	<key>name</key>
 	<array>
-		<string>mercurio</string>
-		<string>venus</string>
-		<string>tierra</string>
-		<string>marte</string>
-		<string>jupiter</string>
-		<string>saturno</string>
-		<string>urano</string>
-		<string>neptuno</string>
+		<string>Saturn</string>
+		<string>Jupiter</string>
+		<string>Mercury</string>
+		<string>Mars</string>
+		<string>Earth</string>
+		<string>Uranus</string>
+		<string>Neptune</string>
+		<string>Venus</string>
 	</array>
 	<key>systemName</key>
 	<array>
