@@ -15,4 +15,9 @@ class Planet{
         self.name = name
         self.description = description
     }
+    func convertDictionary() -> [String:String] {
+        var dictionary = [String:String]()
+        dictionary = [name: description]
+        return dictionary
+    }
 }
