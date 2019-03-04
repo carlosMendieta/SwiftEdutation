@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>descriptionPlanet</key>
+	<array>
+		<string>first planet</string>
+		<string>shine like a star</string>
+		<string>we live here</string>
+		<string>the red planet</string>
+		<string>the big one</string>
+		<string>the one with rings</string>
+		<string>the gas planet</string>
+		<string>so far way</string>
+		<string>the halo planet</string>
+		<string>It doesn&apos;t have water</string>
+		<string>Have a lot of creatures</string>
+		<string>Have ten moons</string>
+		<string>only one person live here</string>
+		<string></string>
+	</array>
+	<key>namePlanet</key>
+	<array>
+		<string>mercurio</string>
+		<string>venus</string>
+		<string>tierra</string>
+		<string>marte</string>
+		<string>jupiter</string>
+		<string>saturno</string>
+		<string>urano</string>
+		<string>neptuno</string>
+		<string>curiomer</string>
+		<string>nuxve</string>
+		<string>errati</string>
+		<string>temar</string>
+		<string>piterjur</string>
+		<string>unonept</string>
+	</array>
+	<key>nameSolarSystem</key>
+	<array>
+		<string>Solar System</string>
+		<string>Alpha System</string>
+	</array>
+</dict>
+</plist>
