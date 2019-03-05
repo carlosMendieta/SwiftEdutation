@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          print("The view did load.")
+        timeLabel.text = "Current Time"
     }
 
     override func didReceiveMemoryWarning() {
