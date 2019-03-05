@@ -33,6 +33,7 @@
 		AC2B2FBB2226F3ED00AFB448 /* PlanetarySystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetarySystem.swift; sourceTree = "<group>"; };
 		ACE6713C222DD041007B229F /* planetsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planetsData.swift; sourceTree = "<group>"; };
 		ACE6713E222DD1CC007B229F /* plist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plist.swift; sourceTree = "<group>"; };
+		ACE67140222DF16E007B229F /* spaceAdventure.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = spaceAdventure.plist; sourceTree = "<group>"; };
 		DB0A94092227166500025070 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		F9A13B8A1ADDD6990057A316 /* SpaceAdventure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpaceAdventure; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A13B8D1ADDD6990057A316 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		F9A13B8C1ADDD6990057A316 /* SpaceAdventure */ = {
 			isa = PBXGroup;
 			children = (
+				ACE67140222DF16E007B229F /* spaceAdventure.plist */,
 				F9A13B8D1ADDD6990057A316 /* main.swift */,
 				AC2B2FB92226E25700AFB448 /* SpaceAdventure.swift */,
 				AC2B2FBB2226F3ED00AFB448 /* PlanetarySystem.swift */,

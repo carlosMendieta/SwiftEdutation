@@ -9,16 +9,7 @@
 import Foundation
 
 let systemName = "Solar System"
-//let planets = [
-//    Planet(name: "mercurio", description:"first planet"),
-//    Planet(name: "venus", description:"shine like a star"),
-//    Planet(name: "tierra", description:"we live here"),
-//    Planet(name: "marte", description:"the red planet"),
-//    Planet(name: "jupiter", description:"the big one"),
-//    Planet(name: "saturno", description:"the one with rings"),
-//    Planet(name: "urano", description:"the gas planet"),
-//    Planet(name: "neptuno", description:"so far away"),
-//]
+
 let secondSystem = "Second Solar System"
 let secondPlanets = [
     Planet(name: "curiomer", description:"first planet"),
@@ -38,12 +29,7 @@ let planetData = [
     "Uranus": "Strangely, this planet rotates around on its side.",
     "Neptune": "A very cold planet, furthest from the sun."
 ]
-//var planets = [Planet]()
-//func dictionaryToArray(){
-//    for (name, description) in planetData {
-//        planets.append(Planet(name: name, description: description))
-//    }
-//}
+
 let planets = planetData.map { name, description in
     Planet(name: name, description: description)
 }

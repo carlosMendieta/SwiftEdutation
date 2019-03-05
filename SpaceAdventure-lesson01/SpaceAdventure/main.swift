@@ -6,8 +6,10 @@
  */
 
 import Foundation
+
 pListCreation()
-//dictionaryToArray()
+
+
 func starAdventure (planetarySystem: PlanetarySystem){
     let adventure = SpaceAdventure(myPlanetarySystem: planetarySystem)
     adventure.start()

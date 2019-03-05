@@ -11,7 +11,7 @@
 		<string>There is something very familiar about this planet.</string>
 		<string>Strangely, this planet rotates around on its side.</string>
 		<string>A very cold planet, furthest from the sun.</string>
-		<string>It's very cloudy here!</string>
+		<string>It&apos;s very cloudy here!</string>
 	</array>
 	<key>name</key>
 	<array>
@@ -26,7 +26,7 @@
 	</array>
 	<key>systemName</key>
 	<array>
-		<string>Solar System</string>
+		<string>Moon System</string>
 		<string>Alphan System</string>
 	</array>
 </dict>
