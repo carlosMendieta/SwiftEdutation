@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let formatter = DateFormatter()
         formatter.timeStyle = .short
         timeLabel.text = formatter.string(from: clock.currentTime as Date)
