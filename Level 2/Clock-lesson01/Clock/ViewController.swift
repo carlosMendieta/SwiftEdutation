@@ -9,8 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var timeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+         print("The view did load.")
     }
 
     override func didReceiveMemoryWarning() {
