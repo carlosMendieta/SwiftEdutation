@@ -13,12 +13,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(updateTimeLabel),
+                                               name: UIApplication.willEnterForegroundNotification,
+                                               object: nil)
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    @objc func updateTimeLabel(){
         let formatter = DateFormatter()
         formatter.timeStyle = .short
         timeLabel.text = formatter.string(from: clock.currentTime as Date)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateTimeLabel()
     }
     
     override func didReceiveMemoryWarning() {
