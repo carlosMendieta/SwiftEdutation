@@ -9,7 +9,13 @@
 import Foundation
 
 class Clock {
+    
     var currentTime: NSDate {
-        return NSDate()
+        get{
+            return NSDate()
+        }
+        set(newData){
+
+        }
     }
 }

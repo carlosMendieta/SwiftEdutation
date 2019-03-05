@@ -8,14 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let clock = Clock()
-    
+    var clock : Clock?
     @IBOutlet weak var timeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        clock = Clock()
         let formatter = DateFormatter()
         formatter.timeStyle = .short
-        timeLabel.text = formatter.string(from: clock.currentTime as Date)
+        timeLabel.text = formatter.string(from: clock!.currentTime as Date)
     }
     
     override func didReceiveMemoryWarning() {
