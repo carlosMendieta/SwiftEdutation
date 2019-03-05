@@ -11,6 +11,7 @@
 		AC2B2FBC2226F3ED00AFB448 /* PlanetarySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2B2FBB2226F3ED00AFB448 /* PlanetarySystem.swift */; };
 		ACE6713D222DD041007B229F /* planetsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE6713C222DD041007B229F /* planetsData.swift */; };
 		ACE6713F222DD1CC007B229F /* plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE6713E222DD1CC007B229F /* plist.swift */; };
+		ACE67142222EB4B1007B229F /* SpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE67141222EB4B1007B229F /* SpaceShip.swift */; };
 		DB0A940A2227166500025070 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A94092227166500025070 /* Planet.swift */; };
 		F9A13B8E1ADDD6990057A316 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A13B8D1ADDD6990057A316 /* main.swift */; };
 		F9A13B951ADDD6F70057A316 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */; };
@@ -34,6 +35,7 @@
 		ACE6713C222DD041007B229F /* planetsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planetsData.swift; sourceTree = "<group>"; };
 		ACE6713E222DD1CC007B229F /* plist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plist.swift; sourceTree = "<group>"; };
 		ACE67140222DF16E007B229F /* spaceAdventure.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = spaceAdventure.plist; sourceTree = "<group>"; };
+		ACE67141222EB4B1007B229F /* SpaceShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShip.swift; sourceTree = "<group>"; };
 		DB0A94092227166500025070 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		F9A13B8A1ADDD6990057A316 /* SpaceAdventure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpaceAdventure; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A13B8D1ADDD6990057A316 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */,
 				ACE6713C222DD041007B229F /* planetsData.swift */,
 				ACE6713E222DD1CC007B229F /* plist.swift */,
+				ACE67141222EB4B1007B229F /* SpaceShip.swift */,
 			);
 			path = SpaceAdventure;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				F9A13B8E1ADDD6990057A316 /* main.swift in Sources */,
 				AC2B2FBC2226F3ED00AFB448 /* PlanetarySystem.swift in Sources */,
+				ACE67142222EB4B1007B229F /* SpaceShip.swift in Sources */,
 				F9A13B951ADDD6F70057A316 /* HelperFunctions.swift in Sources */,
 				ACE6713F222DD1CC007B229F /* plist.swift in Sources */,
 				AC2B2FBA2226E25700AFB448 /* SpaceAdventure.swift in Sources */,

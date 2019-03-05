@@ -1,13 +1,12 @@
-//
 //  SpaceAdventure.swift
 //  SpaceAdventure
 //
 //  Created by Carlos Mendieta on 2/27/19.
 //  Copyright © 2019 Your School. All rights reserved.
-//
 
 import Foundation
 class SpaceAdventure {
+    let mySpaceShip = SpaceShip(name: "Revennat", passengerCapacity: 300)
     let myPlanetarySystem: PlanetarySystem
     func start(){
         displayIntroduction()
@@ -18,6 +17,7 @@ class SpaceAdventure {
     private func displayIntroduction(){
         let diameterOfEarth = 24859.82
         print("Welcome to the \(myPlanetarySystem.name)!")
+        print("You are in \(mySpaceShip.name) ship, it has a capacity of \(mySpaceShip.passengerCapacity) passengers")
         if myPlanetarySystem.planets.count == 1 {
             print("There are \(myPlanetarySystem.planets.count) planet to explore.")
         } else {
@@ -25,7 +25,7 @@ class SpaceAdventure {
         }
         print("You are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
     }
-    private func message(message: String) -> String {
+    func message(message: String) -> String {
         print(message)
         return getln()
     }
@@ -59,9 +59,27 @@ class SpaceAdventure {
             if planet.name == planetName {
                 print("Ok! Traveling to... \(planet.name). \(planet.description)")
                 found.toggle()
+                visitNeighbor()
             }
         }
         if !found {print("Sorry, we don't know that planet.")}
+    }
+    private func visitNeighbor(){
+        print("Do you wanna travel to the neighbor planet? Y/N")
+        var decision = ""
+        while !(decision == "Y" || decision == "N"){
+            decision = getln()
+            switch String(decision) {
+            case "Y":
+                print("traveling to the neighbor planet \(myPlanetarySystem.planets.randomElement()!.name)")
+            case "N":
+                print("Ok, lets stay here")
+            default :
+                print("try again")
+            }
+        }
+        
+
     }
     init(myPlanetarySystem: PlanetarySystem) {
         self.myPlanetarySystem = myPlanetarySystem
