@@ -9,28 +9,31 @@ import UIKit
 
 class ViewController: UIViewController {
     let clock = Clock()
-    
+    var timer: Timer?
     @IBOutlet weak var timeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(updateTimeLabel),
-                                               name: UIApplication.willEnterForegroundNotification,
-                                               object: nil)
-    }
-    deinit {
-        NotificationCenter.default.removeObserver(self)
+        timer = Timer.scheduledTimer(
+            timeInterval: 1,
+            target: self,
+            selector: #selector(updateTimeLabel),
+            userInfo: nil,
+            repeats: true)
     }
     @objc func updateTimeLabel(){
         let formatter = DateFormatter()
-        formatter.timeStyle = .short
+        formatter.timeStyle = .long
         timeLabel.text = formatter.string(from: clock.currentTime as Date)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateTimeLabel()
     }
-    
+    deinit {
+        if let timer = self.timer {
+            timer.invalidate()
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
