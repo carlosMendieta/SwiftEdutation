@@ -9,8 +9,9 @@
 import Foundation
 
 class Stopwatch {
+    private var valuePaused: NSDate?
     private var startTime: NSDate?
-    var elapsedTime: TimeInterval {
+    func elapsedTimeF() -> Double{
         if let startTime = self.startTime {
             return -startTime.timeIntervalSinceNow
         }else {
@@ -22,5 +23,11 @@ class Stopwatch {
     }
     func stop(){
         startTime = nil
+    }
+    func pause(){
+        valuePaused = startTime
+    }
+    func resume(){
+        startTime = valuePaused
     }
 }
