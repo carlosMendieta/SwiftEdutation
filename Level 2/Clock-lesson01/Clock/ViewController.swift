@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     @objc func updateTimeLabel(){
         let formatter = DateFormatter()
-        formatter.timeStyle = .long
+        formatter.timeStyle = .medium
         timeLabel.text = formatter.string(from: clock.currentTime as Date)
     }
     
