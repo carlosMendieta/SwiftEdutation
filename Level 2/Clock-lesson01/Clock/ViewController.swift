@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     let clock = Clock()
     var timer: Timer?
+    var toggleColons = false
     @IBOutlet weak var timeLabel: UILabel!
     
     override func viewDidLoad() {
@@ -29,8 +30,13 @@ class ViewController: UIViewController {
     
     @objc func updateTimeLabel(){
         let formatter = DateFormatter()
-        formatter.timeStyle = .long
-        timeLabel.text = formatter.string(from: clock.currentTime as Date)
+        formatter.timeStyle = .medium
+        var timeText = formatter.string(from: clock.currentTime as Date)
+        if toggleColons {
+            timeText = timeText.replacingOccurrences(of: ":", with: " ")
+        }
+        toggleColons.toggle()
+        timeLabel.text = timeText
     }
     
     override func viewWillAppear(_ animated: Bool) {
