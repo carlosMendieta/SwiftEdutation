@@ -31,20 +31,22 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="8eo-Jf-pMF">
-                                <rect key="frame" x="99" y="600" width="216" height="36"/>
+                                <rect key="frame" x="98.666666666666686" y="600" width="217" height="36"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BES-Pt-uRf">
-                                        <rect key="frame" x="0.0" y="0.0" width="58" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="START"/>
                                         <variation key="heightClass=compact">
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         </variation>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggi-ci-723">
-                                        <rect key="frame" x="158" y="0.0" width="58" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="164" y="0.0" width="53" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="STOP">
+                                            <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <variation key="heightClass=compact">
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         </variation>
