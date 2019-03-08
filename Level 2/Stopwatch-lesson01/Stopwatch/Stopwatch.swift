@@ -17,6 +17,9 @@ class Stopwatch {
             return 0
         }
     }
+    var isRunning: Bool {
+        return startTime != nil
+    }
     func start(){
         startTime = NSDate()
     }
@@ -24,3 +27,4 @@ class Stopwatch {
         startTime = nil
     }
 }
+
