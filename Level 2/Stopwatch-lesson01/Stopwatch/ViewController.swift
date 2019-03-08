@@ -6,7 +6,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 */
 
 import UIKit
-
+let stopwatch = Stopwatch()
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -19,6 +19,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func startButtonTapped(_ sender: UIButton) {
+//        print("Starting stopwatch")
+        stopwatch.start()
+    }
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
+        print(stopwatch.elapsedTime)
+        stopwatch.stop()
+    }
     
 }
 

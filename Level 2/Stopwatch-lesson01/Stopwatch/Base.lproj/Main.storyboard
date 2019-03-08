@@ -40,6 +40,9 @@
                                         <variation key="heightClass=compact">
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zt4-1a-4JG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggi-ci-723">
                                         <rect key="frame" x="164" y="0.0" width="53" height="36"/>
@@ -50,6 +53,9 @@
                                         <variation key="heightClass=compact">
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tVy-w6-omY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=compact" spacing="200"/>
