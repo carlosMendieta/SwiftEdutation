@@ -79,13 +79,13 @@
 		721A875C1AE4B75B003DBFC4 /* Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
-				721A875F1AE4B75B003DBFC4 /* AppDelegate.swift */,
+				ACE6C5B722316D1D006E149F /* Stopwatch.swift */,
 				721A87611AE4B75B003DBFC4 /* ViewController.swift */,
 				721A87631AE4B75C003DBFC4 /* Main.storyboard */,
 				721A87661AE4B75C003DBFC4 /* Images.xcassets */,
 				721A87681AE4B75C003DBFC4 /* LaunchScreen.xib */,
+				721A875F1AE4B75B003DBFC4 /* AppDelegate.swift */,
 				721A875D1AE4B75B003DBFC4 /* Supporting Files */,
-				ACE6C5B722316D1D006E149F /* Stopwatch.swift */,
 			);
 			path = Stopwatch;
 			sourceTree = "<group>";
