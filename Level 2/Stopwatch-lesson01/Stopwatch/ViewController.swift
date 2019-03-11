@@ -1,9 +1,9 @@
 /*
-
-This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike
-4.0 International License, by Yong Bakos.
-
-*/
+ 
+ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike
+ 4.0 International License, by Yong Bakos.
+ 
+ */
 
 import UIKit
 
@@ -24,15 +24,25 @@ class ViewController: UIViewController {
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
         print("Starting stopwatch")
+        Timer.scheduledTimer(timeInterval:
+            1.0,
+            target: self,
+            selector: #selector(updateElapsedTimeLabel),
+            userInfo: nil,
+            repeats: true)
         stopwatch.start()
-        while stopwatch.isRunning {
-            print("Updating...")
-            elapsedTimeLabel.text = "\(stopwatch.elapsedTime)"
-        }
     }
     @IBAction func stopButtonTapped(_ sender: UIButton) {
         print(stopwatch.elapsedTime)
         stopwatch.stop()
+    }
+    @objc func updateElapsedTimeLabel(timer: Timer) {
+        print("updating...")
+        if stopwatch.isRunning {
+            elapsedTimeLabel.text = "\(stopwatch.elapsedTime)"
+        } else {
+            timer.invalidate()
+        }
     }
 }
 
