@@ -21,15 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWK-3Y-qLE">
-                                <rect key="frame" x="135.33333333333337" y="120" width="143.66666666666663" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact">
-                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                </variation>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="8eo-Jf-pMF">
                                 <rect key="frame" x="98.666666666666686" y="600" width="217" height="36"/>
                                 <subviews>
@@ -60,10 +51,18 @@
                                 </subviews>
                                 <variation key="heightClass=compact" spacing="200"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWK-3Y-qLE">
+                                <rect key="frame" x="133.66666666666666" y="119.99999999999999" width="146.99999999999997" height="51.333333333333329"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="BWK-3Y-qLE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6bX-mw-ULM"/>
                             <constraint firstItem="BWK-3Y-qLE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="EFW-CF-Ijt">
                                 <variation key="heightClass=compact" constant="120"/>
                             </constraint>
@@ -71,6 +70,7 @@
                                 <variation key="heightClass=compact" constant="50"/>
                             </constraint>
                             <constraint firstItem="8eo-Jf-pMF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n9q-MY-75y"/>
+                            <constraint firstItem="BWK-3Y-qLE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qoE-bL-4Pm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -79,6 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="134.5108695652174"/>
         </scene>
     </scenes>
 </document>

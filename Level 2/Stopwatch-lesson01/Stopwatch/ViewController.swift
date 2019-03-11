@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func startButtonTapped(_ sender: UIButton) {
         print("Starting stopwatch")
         Timer.scheduledTimer(timeInterval:
-            1.0,
+            0.1,
             target: self,
             selector: #selector(updateElapsedTimeLabel),
             userInfo: nil,
@@ -39,7 +39,11 @@ class ViewController: UIViewController {
     @objc func updateElapsedTimeLabel(timer: Timer) {
         print("updating...")
         if stopwatch.isRunning {
-            elapsedTimeLabel.text = "\(stopwatch.elapsedTime)"
+            let minutes = Int(stopwatch.elapsedTime / 60)
+            let seconds = Int(stopwatch.elapsedTime) % 60
+            let tenthsOfSecond = Int(stopwatch.elapsedTime * 10) % 10
+            elapsedTimeLabel.text = String(format:"%02d:%02d.%d",
+                                           minutes, seconds, tenthsOfSecond)
         } else {
             timer.invalidate()
         }
