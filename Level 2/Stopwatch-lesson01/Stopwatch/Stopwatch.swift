@@ -9,6 +9,7 @@
 import Foundation
 
 class Stopwatch {
+    private var resume: NSDate?
     private var startTime: NSDate?
     var elapsedTime: TimeInterval {
         if let startTime = self.startTime {
@@ -24,7 +25,15 @@ class Stopwatch {
         startTime = NSDate()
     }
     func stop(){
+        resume = startTime
         startTime = nil
+    }
+    var elapsedTimeAsString: String {
+        return String(
+            format:"%02d:%02d.%d",
+            Int(elapsedTime / 60),
+            Int(elapsedTime) % 60,
+            Int(elapsedTime * 10) % 10)
     }
 }
 
