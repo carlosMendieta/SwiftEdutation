@@ -47,7 +47,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="pickerView" destination="cwH-S3-Zrv" id="FfQ-qF-qLI"/>
+                        <outlet property="celsiusPicker" destination="cwH-S3-Zrv" id="FfQ-qF-qLI"/>
                         <outlet property="temperatureLabel" destination="eDF-oh-HMo" id="5lp-wu-G5V"/>
                         <outlet property="temperatureRange" destination="UHP-qc-q4g" id="QoA-jp-fxq"/>
                     </connections>
