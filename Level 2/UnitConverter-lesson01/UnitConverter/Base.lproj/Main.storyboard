@@ -31,29 +31,29 @@
                                 </variation>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwH-S3-Zrv">
-                                <rect key="frame" x="47" y="470" width="320" height="216"/>
+                                <rect key="frame" x="47" y="460" width="0.0" height="216"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cja-1x-yaL"/>
+                                    <outlet property="dataSource" destination="UHP-qc-q4g" id="f8T-UV-nME"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="pZZ-I0-aXd"/>
                                 </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eDF-oh-HMo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="2Rl-ae-sir">
-                                <variation key="heightClass=compact" constant="60"/>
-                            </constraint>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cwH-S3-Zrv" secondAttribute="bottom" constant="50" id="4Tf-8n-qXj"/>
-                            <constraint firstItem="cwH-S3-Zrv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MhS-wZ-Q7g"/>
-                            <constraint firstItem="eDF-oh-HMo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1F-rp-9oI"/>
+                            <constraint firstItem="eDF-oh-HMo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1IE-Te-BdO"/>
+                            <constraint firstItem="eDF-oh-HMo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="PGj-wC-Ze0"/>
+                            <constraint firstItem="cwH-S3-Zrv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hMN-UG-ZaD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cwH-S3-Zrv" secondAttribute="bottom" constant="60" id="sQq-ki-pRt"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="pickerView" destination="cwH-S3-Zrv" id="FfQ-qF-qLI"/>
                         <outlet property="temperatureLabel" destination="eDF-oh-HMo" id="5lp-wu-G5V"/>
+                        <outlet property="temperatureRange" destination="UHP-qc-q4g" id="QoA-jp-fxq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="UHP-qc-q4g" userLabel="TemperatureRange" customClass="TemperatureRange" customModule="UnitConverter"/>
             </objects>
             <point key="canvasLocation" x="50.724637681159422" y="24.456521739130437"/>
         </scene>
