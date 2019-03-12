@@ -34,13 +34,11 @@ class ViewController: UIViewController {
                              userInfo: nil,
                              repeats: true)
         stopwatch.start()
-        startButton.setTitle("Restart", for: UIControl.State.normal)
     }
     @IBAction func stopButtonTapped(_ sender: UIButton) {
         stopwatch.stop()
         startButton.principalColor()
         stopButton.stopColor()
-        stopButton.setTitle("Resume", for: UIControl.State.normal)
         
     }
     @objc func updateElapsedTimeLabel(timer: Timer) {
