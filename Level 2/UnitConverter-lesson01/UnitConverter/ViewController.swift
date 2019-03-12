@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     private var temperatureValues = (-100...100).map{$0}
     @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var temperatureLabel: UILabel!
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -25,12 +26,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //convert and display temperature
+        let degreesCelsius = Float(temperatureValues[row])
+        let degreesFahrenheit = 1.8 * degreesCelsius + 32
+        temperatureLabel.text = "\(Int(degreesFahrenheit))°F"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         pickerView.selectRow(100, inComponent: 0, animated: true)
+        
     }
 
     override func didReceiveMemoryWarning() {

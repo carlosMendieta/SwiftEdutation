@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDF-oh-HMo">
-                                <rect key="frame" x="160" y="90" width="94.333333333333314" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32˚F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDF-oh-HMo">
+                                <rect key="frame" x="162.66666666666666" y="90" width="89" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,7 +31,7 @@
                                 </variation>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwH-S3-Zrv">
-                                <rect key="frame" x="47" y="470" width="0.0" height="216"/>
+                                <rect key="frame" x="47" y="470" width="320" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="cja-1x-yaL"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="pZZ-I0-aXd"/>
@@ -50,6 +50,7 @@
                     </view>
                     <connections>
                         <outlet property="pickerView" destination="cwH-S3-Zrv" id="FfQ-qF-qLI"/>
+                        <outlet property="temperatureLabel" destination="eDF-oh-HMo" id="5lp-wu-G5V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
