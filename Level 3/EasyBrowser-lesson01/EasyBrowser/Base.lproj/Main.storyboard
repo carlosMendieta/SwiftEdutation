@@ -22,22 +22,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc8-5e-aJ3">
-                                <rect key="frame" x="158.66666666666666" y="75" width="97" height="30"/>
-                                <state key="normal" title="Open in Safari"/>
+                                <rect key="frame" x="169" y="30" width="76" height="30"/>
+                                <state key="normal" title="Open Page"/>
                                 <connections>
-                                    <action selector="openPageInSafari:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bD-1U-pgJ"/>
+                                    <action selector="openPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bD-1U-pgJ"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXU-hf-o4c">
+                                <rect key="frame" x="0.0" y="70" width="414" height="666"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Qc8-5e-aJ3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="HX7-5Z-6Gh"/>
+                            <constraint firstItem="WXU-hf-o4c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7jy-Mz-jvR"/>
+                            <constraint firstItem="Qc8-5e-aJ3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="HX7-5Z-6Gh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WXU-hf-o4c" secondAttribute="bottom" id="cvA-sg-Zie"/>
+                            <constraint firstAttribute="trailing" secondItem="WXU-hf-o4c" secondAttribute="trailing" id="fL7-Tl-14J"/>
                             <constraint firstItem="Qc8-5e-aJ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j9W-pX-aYQ"/>
+                            <constraint firstItem="WXU-hf-o4c" firstAttribute="top" secondItem="Qc8-5e-aJ3" secondAttribute="bottom" constant="10" id="wVA-vC-cnN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="WXU-hf-o4c" id="8fB-u0-p24"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="24.456521739130437"/>
         </scene>
     </scenes>
 </document>
