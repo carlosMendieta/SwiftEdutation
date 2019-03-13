@@ -27,9 +27,9 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let defaultPickerRow = celsiusPicker.numberOfRows(inComponent: 0)/2
-        celsiusPicker.selectRow(defaultPickerRow, inComponent: 0, animated: true)
-        pickerView(celsiusPicker, didSelectRow: defaultPickerRow, inComponent: 0)
+        let row = initialPickerRow()
+        celsiusPicker.selectRow(row, inComponent: 0, animated: true)
+        pickerView(celsiusPicker, didSelectRow: row, inComponent: 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +44,16 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     func saveSelectedRow(row: Int){
         let defaults = UserDefaults.standard
         defaults.set(row, forKey: userDefaultsLastRowKey)
-//        defaults.synchronize()
+    }
+    
+    func initialPickerRow()->Int{
+        let savedRow = UserDefaults.standard.integer(forKey: userDefaultsLastRowKey) as? Int
+        if let row = savedRow {
+            return row
+        }else {
+            return celsiusPicker.numberOfRows(inComponent: 0)/2
+        }
+        
     }
     
 }
