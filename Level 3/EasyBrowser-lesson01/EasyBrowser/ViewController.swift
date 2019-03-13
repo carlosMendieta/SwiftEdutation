@@ -18,6 +18,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func openPageInSafari(_ sender: UIButton) {
+        if let url = URL(string: "http://developer.apple.com"){
+            UIApplication.shared.open(url)
+        }
+    }
+    
 }
 
