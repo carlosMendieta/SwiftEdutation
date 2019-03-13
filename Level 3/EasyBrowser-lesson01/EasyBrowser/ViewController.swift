@@ -8,7 +8,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
    
     @IBOutlet weak var webView: WKWebView!
     
@@ -22,12 +22,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func openPage(_ sender: UIButton) {
-        if let url = URL(string: "http://developer.apple.com"){
-//            UIApplication.shared.open(url)
-            let request = URLRequest(url: url)
-            webView.load(request)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        textField.resignFirstResponder()
+        if let url = URL(string: textField.text!){
+            webView.load(URLRequest(url: url))
         }
+        return true
     }
     
 }
