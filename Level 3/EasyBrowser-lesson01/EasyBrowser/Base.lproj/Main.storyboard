@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,18 +20,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXU-hf-o4c">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWw-C5-fBy">
                                 <rect key="frame" x="0.0" y="20" width="414" height="52"/>
                                 <items>
-                                    <barButtonItem systemItem="rewind" id="nY9-9v-RPi"/>
+                                    <barButtonItem systemItem="rewind" id="nY9-9v-RPi">
+                                        <connections>
+                                            <action selector="rewindTapButton:" destination="BYZ-38-t0r" id="JSA-ic-WAv"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" id="SS0-lY-yxV">
                                         <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="O5c-GC-wLu">
                                             <rect key="frame" x="49" y="11" width="316" height="30"/>
@@ -45,24 +40,36 @@
                                             </connections>
                                         </textField>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="fastForward" id="Ukc-Wf-6qi"/>
+                                    <barButtonItem systemItem="fastForward" id="Ukc-Wf-6qi">
+                                        <connections>
+                                            <action selector="forwardTapButton:" destination="BYZ-38-t0r" id="NOg-8F-LEP"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWo-c0-CBy">
+                                <rect key="frame" x="0.0" y="72" width="414" height="664"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WXU-hf-o4c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7jy-Mz-jvR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nWo-c0-CBy" secondAttribute="bottom" id="2A9-nO-lmh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BWw-C5-fBy" secondAttribute="bottom" constant="664" id="9Gu-eo-ZW6"/>
                             <constraint firstItem="BWw-C5-fBy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ASP-en-Ak8"/>
                             <constraint firstItem="BWw-C5-fBy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CUn-oJ-cTJ"/>
                             <constraint firstAttribute="trailing" secondItem="BWw-C5-fBy" secondAttribute="trailing" id="DuJ-hG-6Mx"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WXU-hf-o4c" secondAttribute="bottom" id="cvA-sg-Zie"/>
-                            <constraint firstAttribute="trailing" secondItem="WXU-hf-o4c" secondAttribute="trailing" id="fL7-Tl-14J"/>
-                            <constraint firstItem="WXU-hf-o4c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hWT-Xj-bQw"/>
+                            <constraint firstItem="nWo-c0-CBy" firstAttribute="top" secondItem="BWw-C5-fBy" secondAttribute="bottom" id="GmX-Am-PBN"/>
+                            <constraint firstAttribute="trailing" secondItem="nWo-c0-CBy" secondAttribute="trailing" id="jAT-gG-0u5"/>
+                            <constraint firstItem="nWo-c0-CBy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mbF-d7-n0r"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="WXU-hf-o4c" id="8fB-u0-p24"/>
+                        <outlet property="webView" destination="nWo-c0-CBy" id="qui-lh-Yy0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

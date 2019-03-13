@@ -30,5 +30,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    @IBAction func rewindTapButton(_ sender: Any) {
+        webView.goBack()
+    }
+    
+    @IBAction func forwardTapButton(_ sender: Any) {
+        webView.goForward()
+    }
+    
+    
 }
 
