@@ -163,7 +163,7 @@
 					F9207F5B1B0CEDF400418CBC = {
 						CreatedOnToolsVersion = 6.3;
 						LastSwiftMigration = 1010;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					F9207F701B0CEDF400418CBC = {
 						CreatedOnToolsVersion = 6.3;
@@ -370,7 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EasyBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -389,7 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EasyBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
