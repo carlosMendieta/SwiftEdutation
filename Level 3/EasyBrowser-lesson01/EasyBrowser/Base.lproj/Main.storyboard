@@ -21,30 +21,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc8-5e-aJ3">
-                                <rect key="frame" x="169" y="30" width="76" height="30"/>
-                                <state key="normal" title="Open Page"/>
-                                <connections>
-                                    <action selector="openPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bD-1U-pgJ"/>
-                                </connections>
-                            </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXU-hf-o4c">
-                                <rect key="frame" x="0.0" y="70" width="414" height="666"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWw-C5-fBy">
+                                <rect key="frame" x="0.0" y="20" width="414" height="52"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="nY9-9v-RPi"/>
+                                    <barButtonItem style="plain" id="SS0-lY-yxV">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="O5c-GC-wLu">
+                                            <rect key="frame" x="49" y="11" width="316" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="Ukc-Wf-6qi"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WXU-hf-o4c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7jy-Mz-jvR"/>
-                            <constraint firstItem="Qc8-5e-aJ3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="HX7-5Z-6Gh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BWw-C5-fBy" secondAttribute="bottom" constant="664" id="9Gu-eo-ZW6"/>
+                            <constraint firstItem="BWw-C5-fBy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ASP-en-Ak8"/>
+                            <constraint firstItem="BWw-C5-fBy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CUn-oJ-cTJ"/>
+                            <constraint firstAttribute="trailing" secondItem="BWw-C5-fBy" secondAttribute="trailing" id="DuJ-hG-6Mx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WXU-hf-o4c" secondAttribute="bottom" id="cvA-sg-Zie"/>
                             <constraint firstAttribute="trailing" secondItem="WXU-hf-o4c" secondAttribute="trailing" id="fL7-Tl-14J"/>
-                            <constraint firstItem="Qc8-5e-aJ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j9W-pX-aYQ"/>
-                            <constraint firstItem="WXU-hf-o4c" firstAttribute="top" secondItem="Qc8-5e-aJ3" secondAttribute="bottom" constant="10" id="wVA-vC-cnN"/>
+                            <constraint firstItem="WXU-hf-o4c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hWT-Xj-bQw"/>
                         </constraints>
                     </view>
                     <connections>
