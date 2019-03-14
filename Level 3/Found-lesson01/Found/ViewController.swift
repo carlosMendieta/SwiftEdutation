@@ -31,6 +31,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
         mapView.setRegion(region, animated: true)
     }
 
+    @IBAction func dropPin(_ sender: UIBarButtonItem) {
+        let pin = Pin(coordinate: mapView.userLocation.coordinate)
+        mapView.addAnnotation(pin)
+    }
     
 }
 
