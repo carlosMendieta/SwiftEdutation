@@ -12,6 +12,10 @@
 		AC66D02F223AEEC80051306C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC66D02D223AEEC80051306C /* Main.storyboard */; };
 		AC66D031223AEECA0051306C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC66D030223AEECA0051306C /* Assets.xcassets */; };
 		AC66D034223AEECA0051306C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC66D032223AEECA0051306C /* LaunchScreen.storyboard */; };
+		AC66D05D223AF4DF0051306C /* monster.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC66D059223AF4DE0051306C /* monster.wav */; };
+		AC66D05E223AF4DF0051306C /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC66D05A223AF4DE0051306C /* guitar.wav */; };
+		AC66D05F223AF4DF0051306C /* applause.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC66D05B223AF4DE0051306C /* applause.wav */; };
+		AC66D060223AF4DF0051306C /* bubbles.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC66D05C223AF4DF0051306C /* bubbles.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		AC66D030223AEECA0051306C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC66D033223AEECA0051306C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC66D035223AEECA0051306C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC66D059223AF4DE0051306C /* monster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monster.wav; sourceTree = "<group>"; };
+		AC66D05A223AF4DE0051306C /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
+		AC66D05B223AF4DE0051306C /* applause.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = applause.wav; sourceTree = "<group>"; };
+		AC66D05C223AF4DF0051306C /* bubbles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubbles.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 		AC66D01D223AEEC80051306C = {
 			isa = PBXGroup;
 			children = (
+				AC66D061223AF50B0051306C /* Supporting Files */,
 				AC66D028223AEEC80051306C /* NoiseMaker */,
 				AC66D027223AEEC80051306C /* Products */,
 			);
@@ -62,6 +71,17 @@
 				AC66D035223AEECA0051306C /* Info.plist */,
 			);
 			path = NoiseMaker;
+			sourceTree = "<group>";
+		};
+		AC66D061223AF50B0051306C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC66D05C223AF4DF0051306C /* bubbles.wav */,
+				AC66D05A223AF4DE0051306C /* guitar.wav */,
+				AC66D059223AF4DE0051306C /* monster.wav */,
+				AC66D05B223AF4DE0051306C /* applause.wav */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +142,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC66D05E223AF4DF0051306C /* guitar.wav in Resources */,
+				AC66D060223AF4DF0051306C /* bubbles.wav in Resources */,
 				AC66D034223AEECA0051306C /* LaunchScreen.storyboard in Resources */,
 				AC66D031223AEECA0051306C /* Assets.xcassets in Resources */,
 				AC66D02F223AEEC80051306C /* Main.storyboard in Resources */,
+				AC66D05D223AF4DF0051306C /* monster.wav in Resources */,
+				AC66D05F223AF4DF0051306C /* applause.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,13 +307,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XWFZ5Y579Z;
+				DEVELOPMENT_TEAM = D66H382JWL;
 				INFOPLIST_FILE = NoiseMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.endava.andresMendieta.NoiseMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.endava.CarlosaAndresMendieta.NoiseMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,13 +325,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XWFZ5Y579Z;
+				DEVELOPMENT_TEAM = D66H382JWL;
 				INFOPLIST_FILE = NoiseMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.endava.andresMendieta.NoiseMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.endava.CarlosaAndresMendieta.NoiseMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
