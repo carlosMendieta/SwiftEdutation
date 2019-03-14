@@ -11,7 +11,10 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    var player: AVAudioPlayer?
+    var guitarPlayer: AVAudioPlayer?
+    var applausePlayer: AVAudioPlayer?
+    var monsterPlayer: AVAudioPlayer?
+    var bubblesPlayer: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,29 +23,29 @@ class ViewController: UIViewController {
 
     @IBAction func playGuitar(_ sender: UIButton) {
         if let url = Bundle.main.url(forResource: "guitar", withExtension: "wav"){
-            player = try? AVAudioPlayer(contentsOf: url)
-            player?.play()
+            guitarPlayer = try? AVAudioPlayer(contentsOf: url)
+            guitarPlayer?.play()
         }
     }
     
     @IBAction func playApplause(_ sender: UIButton) {
         if let url = Bundle.main.url(forResource: "applause", withExtension: "wav"){
-            player = try? AVAudioPlayer(contentsOf: url)
-            player?.play()
+            applausePlayer = try? AVAudioPlayer(contentsOf: url)
+            applausePlayer?.play()
         }
     }
     
     @IBAction func playMonster(_ sender: UIButton) {
         if let url = Bundle.main.url(forResource: "monster", withExtension: "wav"){
-            player = try? AVAudioPlayer(contentsOf: url)
-            player?.play()
+            monsterPlayer = try? AVAudioPlayer(contentsOf: url)
+            monsterPlayer?.play()
         }
     }
     
     @IBAction func playBubbles(_ sender: UIButton) {
         if let url = Bundle.main.url(forResource: "bubbles", withExtension: "wav"){
-            player = try? AVAudioPlayer(contentsOf: url)
-            player?.play()
+            bubblesPlayer = try? AVAudioPlayer(contentsOf: url)
+            bubblesPlayer?.play()
         }
     }
     
