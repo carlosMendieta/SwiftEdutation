@@ -21,23 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55q-SD-KuQ">
-                                <rect key="frame" x="135" y="124" width="144" height="30"/>
-                                <state key="normal" title="Open Maps with URL"/>
-                                <connections>
-                                    <action selector="openMapAppWithURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pA3-6k-KfJ"/>
-                                </connections>
-                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="egX-Pr-Ssb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="708"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="55q-SD-KuQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="104" id="9Sl-mF-smE"/>
-                            <constraint firstItem="55q-SD-KuQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uRh-Ep-Pkp"/>
+                            <constraint firstAttribute="trailing" secondItem="egX-Pr-Ssb" secondAttribute="trailing" id="1dq-Xj-823"/>
+                            <constraint firstItem="egX-Pr-Ssb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Pmu-vh-npV"/>
+                            <constraint firstItem="egX-Pr-Ssb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Suu-QN-eoQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="egX-Pr-Ssb" secondAttribute="bottom" id="puP-WX-hrl"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="24.456521739130437"/>
         </scene>
     </scenes>
 </document>
