@@ -16,6 +16,7 @@
 		AC66D05E223AF4DF0051306C /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC66D05A223AF4DE0051306C /* guitar.wav */; };
 		AC66D05F223AF4DF0051306C /* applause.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC66D05B223AF4DE0051306C /* applause.wav */; };
 		AC66D060223AF4DF0051306C /* bubbles.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC66D05C223AF4DF0051306C /* bubbles.wav */; };
+		AC66D063223B08170051306C /* NoiseMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC66D062223B08170051306C /* NoiseMaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AC66D05A223AF4DE0051306C /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
 		AC66D05B223AF4DE0051306C /* applause.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = applause.wav; sourceTree = "<group>"; };
 		AC66D05C223AF4DF0051306C /* bubbles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubbles.wav; sourceTree = "<group>"; };
+		AC66D062223B08170051306C /* NoiseMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				AC66D030223AEECA0051306C /* Assets.xcassets */,
 				AC66D032223AEECA0051306C /* LaunchScreen.storyboard */,
 				AC66D035223AEECA0051306C /* Info.plist */,
+				AC66D062223B08170051306C /* NoiseMaker.swift */,
 			);
 			path = NoiseMaker;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC66D02C223AEEC80051306C /* ViewController.swift in Sources */,
+				AC66D063223B08170051306C /* NoiseMaker.swift in Sources */,
 				AC66D02A223AEEC80051306C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
