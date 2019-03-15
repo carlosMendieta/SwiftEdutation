@@ -25,37 +25,37 @@
                                 </constraints>
                                 <state key="normal" title="Guitar"/>
                                 <connections>
-                                    <action selector="playGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7XQ-JR-bXn"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WCK-AD-EmQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9l-Tv-hgz">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9l-Tv-hgz">
                                 <rect key="frame" x="30" y="210" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="CK7-Jc-cSJ"/>
                                 </constraints>
                                 <state key="normal" title="Monster"/>
                                 <connections>
-                                    <action selector="playMonster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndV-Ga-C2y"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8j7-xt-3AJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5q-lg-uZP">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5q-lg-uZP">
                                 <rect key="frame" x="210" y="210" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="kSp-8g-RWQ"/>
                                 </constraints>
                                 <state key="normal" title="Bubbles"/>
                                 <connections>
-                                    <action selector="playBubbles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="els-df-dku"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xci-T0-iB9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWH-qI-PCA">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWH-qI-PCA">
                                 <rect key="frame" x="210" y="100" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="QRd-71-WtY"/>
                                 </constraints>
                                 <state key="normal" title="Applause"/>
                                 <connections>
-                                    <action selector="playApplause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UcT-qC-kfY"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Gu-wh-tBo"/>
                                 </connections>
                             </button>
                         </subviews>
