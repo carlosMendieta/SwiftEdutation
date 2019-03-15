@@ -11,39 +11,34 @@ import AVFoundation
 
 class NoiseMaker{
     
-    private var guitarPlayer: AVAudioPlayer?
-    private var applausePlayer: AVAudioPlayer?
-    private var monsterPlayer: AVAudioPlayer?
-    private var bubblesPlayer: AVAudioPlayer?
+    let audioFileNames = ["guitar","applause","monster","bubbles"]
+    
+    let players: [AVAudioPlayer?]
     
     func playGuitarSound(){
-        guitarPlayer?.play()
+        players[0]?.play()
     }
     
     func playApplauseSound(){
-        applausePlayer?.play()
+        players[1]?.play()
     }
     
     func playMonsterSound(){
-        monsterPlayer?.play()
+        players[2]?.play()
     }
     
     func playBubblesSound(){
-       bubblesPlayer?.play()
+        players[3]?.play()
     }
     
     init() {
-        if let url = Bundle.main.url(forResource: "guitar", withExtension: "wav"){
-            guitarPlayer = try? AVAudioPlayer(contentsOf: url)
-        }
-        if let url2 = Bundle.main.url(forResource: "applause", withExtension: "wav"){
-            applausePlayer = try? AVAudioPlayer(contentsOf: url2)
-        }
-        if let url3 = Bundle.main.url(forResource: "monster", withExtension: "wav"){
-            monsterPlayer = try? AVAudioPlayer(contentsOf: url3)
-        }
-        if let url4 = Bundle.main.url(forResource: "bubbles", withExtension: "wav"){
-            bubblesPlayer = try? AVAudioPlayer(contentsOf: url4)
+        players = audioFileNames.map{
+            filename in
+            if let url = Bundle.main.url(forResource: filename, withExtension: "wav"){
+                return try? AVAudioPlayer(contentsOf: url)
+            }else {
+                return nil
+            }
         }
     }
 }
