@@ -15,20 +15,10 @@ class NoiseMaker{
     
     let players: [AVAudioPlayer?]
     
-    func playGuitarSound(){
-        players[0]?.play()
-    }
-    
-    func playApplauseSound(){
-        players[1]?.play()
-    }
-    
-    func playMonsterSound(){
-        players[2]?.play()
-    }
-    
-    func playBubblesSound(){
-        players[3]?.play()
+    func play(index: Int){
+        if !players.isEmpty && index >= 0 && index < players.count {
+            players[index]?.play()
+        }
     }
     
     init() {

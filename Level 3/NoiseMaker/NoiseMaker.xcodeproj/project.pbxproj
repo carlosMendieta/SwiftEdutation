@@ -65,13 +65,13 @@
 		AC66D028223AEEC80051306C /* NoiseMaker */ = {
 			isa = PBXGroup;
 			children = (
+				AC66D062223B08170051306C /* NoiseMaker.swift */,
 				AC66D029223AEEC80051306C /* AppDelegate.swift */,
 				AC66D02B223AEEC80051306C /* ViewController.swift */,
 				AC66D02D223AEEC80051306C /* Main.storyboard */,
 				AC66D030223AEECA0051306C /* Assets.xcassets */,
 				AC66D032223AEECA0051306C /* LaunchScreen.storyboard */,
 				AC66D035223AEECA0051306C /* Info.plist */,
-				AC66D062223B08170051306C /* NoiseMaker.swift */,
 			);
 			path = NoiseMaker;
 			sourceTree = "<group>";
